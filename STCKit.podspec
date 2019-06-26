@@ -8,6 +8,6 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "9.0"
   s.source   = { :git => 'https://github.com/STC-VoiceKey/stckit-ios.git', :tag => s.version, :submodules => true }
   s.requires_arc = true
-  s.source_files = 'STCKit/**/*.{swift,m,c}'    
-  s.public_header_files = 'STCKit/*.h'
+  s.source_files = 'STCKit/**/*.{swift}'
+  s.resources = "STCKit/**/*.{xib,xcassets}"
 end
